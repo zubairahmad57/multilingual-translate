@@ -1,0 +1,23 @@
+/* FeatureSection Styles */
+.feature-section {
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.feature-card {
+  border: 1px solid #ddd; /* Subtle border for cards */
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.feature-card .btn {
+  margin-top: 10px; /* Space between description and button */
+}
+
+/* Image styling */
+.feature-image {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure the image covers the card */
+}
