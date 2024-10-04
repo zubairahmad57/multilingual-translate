@@ -1,23 +1,172 @@
-/* FeatureSection Styles */
+/* Full screen dark background */
 .feature-section {
-  background-color: #f9f9f9; /* Light background for contrast */
+  height: 100vh;
+  width: 100vw;
+  background-color: #111111; /* Darker background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.feature-card {
-  border: 1px solid #ddd; /* Subtle border for cards */
-  transition: transform 0.3s;
+/* Animated heading with point icon and typing effect */
+.animated-text {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
-.feature-card:hover {
-  transform: scale(1.05); /* Slightly enlarge card on hover */
+.point-icon {
+  color: #0056b3;
+  margin-right: 10px;
+  font-size: 2rem;
 }
 
-.feature-card .btn {
-  margin-top: 10px; /* Space between description and button */
+/* Typing effect text */
+.typewriter-text {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-/* Image styling */
-.feature-image {
-  height: 200px; /* Fixed height for images */
-  object-fit: cover; /* Ensure the image covers the card */
+/* Blue word styling */
+.blue-word {
+  color: #0056b3; /* Website theme blue */
+}
+
+/* Features Heading */
+.features-heading {
+  font-size: 2.5rem;
+  color: #0069d9;
+  margin-bottom: 30px;
+  text-align: center;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accordion container */
+.accordion {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  height: 60vh;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+/* Accordion items */
+.accordion-item {
+  flex: 1;
+  max-width: 18%;
+  min-width: 15%;
+  height: 100%;
+  opacity: 0.5;
+  transition: width 0.5s ease, opacity 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.7); /* White shadow effect */
+  cursor: pointer;
+}
+
+.accordion-item.active {
+  flex: 3; /* Larger flex for active accordion */
+  max-width: 60%; /* Ensure it doesn't go too wide */
+  opacity: 1;
+  z-index: 2;
+}
+
+.accordion-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: filter 0.5s ease;
+  filter: none; /* No filter for original HD quality */
+}
+
+/* Content overlay */
+.accordion-item .content {
+  position: absolute;
+  bottom: 20%;
+  left: 20px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.accordion-item.active .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Learn More button */
+.learn-more-btn {
+  display: inline-block;
+  background-color: #0069d9; /* Website theme color */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .accordion {
+    flex-direction: row;
+    height: auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 0 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .accordion-item {
+    min-width: 80%; /* Allow more room for each item */
+    height: auto;
+    margin-right: 10px; /* Spacing between items */
+    position: relative;
+  }
+
+  .accordion-item .content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+    opacity: 1; /* Ensure content is visible */
+    transition: opacity 0.3s ease;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.7); /* Dark background for better readability */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .accordion-item img {
+    max-height: 300px; /* Cap the image height on mobile */
+    border-radius: 8px;
+  }
 }
