@@ -32,3 +32,19 @@
 .text-center {
   text-align: center;
 }
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0; /* Reduce padding for mobile */
+  }
+  .footer h5 {
+    font-size: 16px; /* Slightly smaller text on mobile */
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .social-icons a {
+    font-size: 16px; /* Smaller icon size on mobile */
+  }
+}

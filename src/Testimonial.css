@@ -68,3 +68,13 @@
   width: 60px;
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  .testimonial-cards {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+  }
+  .testimonial-card {
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 20px; /* Add space between cards */
+  }
+}

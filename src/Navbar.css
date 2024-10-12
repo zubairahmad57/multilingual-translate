@@ -173,3 +173,11 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 768px) {
+  .nav-link {
+    padding: 8px 12px; /* Reduced padding for mobile */
+  }
+  .hamburger-icon {
+    width: 25px; /* Smaller icon for mobile */
+  }
+}

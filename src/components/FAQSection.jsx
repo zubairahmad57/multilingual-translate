@@ -24,12 +24,14 @@ const FAQSection = () => {
   return (
     <div className="faq-section">
       <h1 className="faq-title">How We Can Use It</h1>
-      {faqs.map((faq, index) => (
-        <div key={index} className="faq-item">
-          <h2 className="faq-question">{faq.question}</h2>
-          <p className="faq-answer">{faq.answer}</p>
-        </div>
-      ))}
+      <div className="faq-container">
+        {faqs.map((faq, index) => (
+          <div key={index} className="faq-item">
+            <h2 className="faq-question">{faq.question}</h2>
+            <p className="faq-answer">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

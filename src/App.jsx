@@ -6,7 +6,7 @@ import FAQSection from "./components/FAQSection";
 import Testimonial from "./components/Testimonial";
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
-import YouTubeTranslation from "./components/YouTubeTranslation";
+
 
 function App() {
   return (
