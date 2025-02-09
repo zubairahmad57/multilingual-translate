@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <img
-        src=".../public/image.png" // Replace with your image URL
+        src="public/image.png" // Replace with your image URL
         alt="Banner"
         className="banner-image"
       />
