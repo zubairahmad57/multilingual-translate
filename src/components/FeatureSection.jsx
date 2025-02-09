@@ -6,31 +6,31 @@ const features = [
     title: "YouTube Translation",
     description: "Translate and subtitle your YouTube videos seamlessly.",
     link: "#youtube-translation",
-    image: "./public/image(1).png",
+    image: "/image(1).png",
   },
   {
     title: "Voice Changer",
     description: "Modify voices for an enhanced experience.",
     link: "#voice-changer",
-    image: "./public/image(3).png",
+    image: "/image(3).png",
   },
   {
     title: "Text to Speech",
     description: "Convert written text into natural-sounding speech.",
     link: "#text-to-speech",
-    image: "./public/image(5).jpg",
+    image: "/image(5).jpg",
   },
   {
     title: "Human Voice Translation",
     description: "Experience realistic human voice translation.",
     link: "#human-voice-translation",
-    image: "./public/image(2).png",
+    image: "/image(2).png",
   },
   {
     title: "Create Avatar",
     description: "Craft personalized avatars for your unique needs.",
     link: "#create-avatar",
-    image: "./public/image(4).png",
+    image: "/image(4).png",
   },
 ];
 
