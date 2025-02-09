@@ -10,14 +10,14 @@ const testimonials = [
     
   },
   {
-    image: '../public/image(t2).png',
+    image: './public/image(t2).png',
     name: 'Gayane Y.',
     role: 'Capterra',
     feedback: '“The best for social media”',
    
   },
   {
-    image: '../public/image(t3).png', // Replace with actual image paths
+    image: './public/image(t3).png', // Replace with actual image paths
     name: 'Ankush C.',
     role: 'Capterra',
     feedback: '“Possibly the best tool for text to speech”',
