@@ -24,13 +24,13 @@ const features = [
     title: "Human Voice Translation",
     description: "Experience realistic human voice translation.",
     link: "#human-voice-translation",
-    image: "../public/image(2).png",
+    image: "./public/image(2).png",
   },
   {
     title: "Create Avatar",
     description: "Craft personalized avatars for your unique needs.",
     link: "#create-avatar",
-    image: "../public/image(4).png",
+    image: "./public/image(4).png",
   },
 ];
 
