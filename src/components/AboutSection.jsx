@@ -21,7 +21,7 @@ const AboutSection = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100 founder-image"
-                  src="./public/founder(1).png" // Replace with actual path
+                  src="/founder(1).png" // Replace with actual path
                   alt="Zubair Ahmad"
                 />
                 <Carousel.Caption>
@@ -32,7 +32,7 @@ const AboutSection = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100 founder-image"
-                  src="./path-to-faiz-image.jpg" // Replace with actual path
+                  src="/path-to-faiz-image.jpg" // Replace with actual path
                   alt="Mohd Faiz"
                 />
                 <Carousel.Caption>
