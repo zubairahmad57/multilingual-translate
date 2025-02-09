@@ -6,7 +6,7 @@ const features = [
     title: "YouTube Translation",
     description: "Translate and subtitle your YouTube videos seamlessly.",
     link: "#youtube-translation",
-    image: "../public/image(1).png",
+    image: "./public/image(1).png",
   },
   {
     title: "Voice Changer",
