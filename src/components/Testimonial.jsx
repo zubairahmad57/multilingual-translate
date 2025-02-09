@@ -3,21 +3,21 @@ import '../Testimonial.css'; // Add appropriate styles here
 
 const testimonials = [
   {
-    image: '../public/image(t1).png', // Replace with actual image paths
+    image: '/image(t1).png', // Replace with actual image paths
     name: 'Ankush C.',
     role: 'Capterra',
     feedback: '“Possibly the best tool for youtube video translation”',
     
   },
   {
-    image: './public/image(t2).png',
+    image: '/image(t2).png',
     name: 'Gayane Y.',
     role: 'Capterra',
     feedback: '“The best for social media”',
    
   },
   {
-    image: './public/image(t3).png', // Replace with actual image paths
+    image: '/image(t3).png', // Replace with actual image paths
     name: 'Ankush C.',
     role: 'Capterra',
     feedback: '“Possibly the best tool for text to speech”',
