@@ -12,13 +12,13 @@ const features = [
     title: "Voice Changer",
     description: "Modify voices for an enhanced experience.",
     link: "#voice-changer",
-    image: "../public/image(3).png",
+    image: "./public/image(3).png",
   },
   {
     title: "Text to Speech",
     description: "Convert written text into natural-sounding speech.",
     link: "#text-to-speech",
-    image: "../public/image(5).jpg",
+    image: "./public/image(5).jpg",
   },
   {
     title: "Human Voice Translation",
